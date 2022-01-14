@@ -10,7 +10,9 @@
     </div>
 
     <div class="buy-selector-container">
-      <QuantitySelector />
+      <QuantitySelector 
+        v-bind="$props"
+        />
       <Button class="btn cta">Add to cart</Button>
     </div>
   </section>
@@ -32,11 +34,11 @@ export default {
     description: String,
     price: Number,
     priceOld: Number,
-    discount: Number
+    discount: Number,
+    quantity: Number
   },
   methods: {
     formatPrice (price) {
-      console.log(price)
       return price.toLocaleString('pt-br', { style: 'currency', currency: 'BRL'})
     }
   }

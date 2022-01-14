@@ -11,6 +11,7 @@
         :price="product.price"
         :priceOld="product.oldPrice"
         :discount="discount"
+        :quantity="product.quantity"
         />
         {{product.title}}
     </main>
