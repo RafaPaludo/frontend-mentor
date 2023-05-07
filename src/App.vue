@@ -2,6 +2,8 @@
   <div id="app">
     <Header />
 
+    .
+
     <main class="main">
       <Showcase />
       <Content 
